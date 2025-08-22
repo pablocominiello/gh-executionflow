@@ -35,7 +35,7 @@ jobs:
       - name: Test code
         id: run-tests
         run: npm run test
-      - name: Log
+      - name: Log outcome
         run: echo "${{steps.run-tests.outcome}}"
 
       - name: Upload test report
