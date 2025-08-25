@@ -80,9 +80,9 @@ jobs:
         run: echo "Deploying..."
 
   Report:
-    needs: [lint, deploy]
-    if: failure()
+    needs: [lint, deploy]    
     runs-on: ubuntu-lastest
+    if: failure()
     steps:
       - name: Output information
         run: |
