@@ -81,7 +81,7 @@ jobs:
 
   Report:
     needs: [lint, deploy]    
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     if: failure()
     steps:
       - name: Output information
